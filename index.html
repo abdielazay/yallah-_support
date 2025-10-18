@@ -1,101 +1,128 @@
-
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yallah! — Soporte</title>
-  <style>
-    :root {
-      --bg:#0f1115; --fg:#e9eef6; --muted:#9aa4b2; --card:#151924; --accent:#8fb3ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
-      background: linear-gradient(135deg,#0b0e13,#151924); color: var(--fg);
-    }
-    .wrap { max-width: 860px; margin: 0 auto; padding: 32px 18px 60px; }
-    header { display:flex; align-items:center; gap:14px; }
-    .logo { width:44px; height:44px; border-radius:12px; background:#1e2433; display:grid; place-items:center;
-             font-weight:700; color:var(--accent); }
-    h1 { font-size: 1.75rem; margin: 0; }
-    .card { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);
-             border-radius:20px; padding:18px 20px; margin:18px 0; }
-    h2 { font-size:1.15rem; margin:0 0 8px 0; }
-    ul { margin:8px 0 0 18px; }
-    a { color: var(--accent); }
-    .muted { color: var(--muted); font-size: 0.95rem; }
-    footer { margin-top:28px; color:var(--muted); font-size:0.9rem; }
-    .grid { display:grid; gap:14px; }
-    @media(min-width:720px){ .grid{ grid-template-columns: 1fr 1fr; } }
-    .lang { font-size:0.95rem; margin-top:6px; }
-    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#1b2230; border:1px solid #2a3447; margin-right:6px; }
-    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#1b2230; border:1px solid #2a3447;
-            border-radius:6px; padding:2px 6px; }
-  </style>
+  <title>Yallah! — Soporte y Guía</title>
+  <meta name="description" content="Soporte oficial de Yallah!: guía rápida, cómo usar la app, preguntas frecuentes y política de privacidad.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrap">
+  <div class="container">
     <header>
       <div class="logo">Y</div>
       <div>
-        <h1>Yallah! — Soporte</h1>
-        <div class="lang muted">ES / EN • Última actualización: October 18, 2025</div>
+        <h1>Yallah! — Soporte y Guía</h1>
+        <div class="muted small">ES / EN • Última actualización: October 18, 2025</div>
       </div>
     </header>
 
-    <div class="card">
-      <h2>¿Necesitas ayuda?</h2>
-      <p>Escríbenos a <a href="mailto:soporte.yallah@gmail.com">soporte.yallah@gmail.com</a></p>
-      <p class="muted">Tiempo de respuesta habitual: 2–3 días hábiles.</p>
-    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#como-usar">Cómo usar Yallah</a>
+      <a href="#guias">Guías rápidas</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
+      <a href="privacy.html">Política de privacidad</a>
+    </nav>
 
-    <div class="grid">
-      <div class="card">
+    <section id="inicio" class="card">
+      <h2>Bienvenido/a</h2>
+      <p>¿Necesitas ayuda con <strong>Yallah!</strong>? Aquí encontrarás una guía práctica para tu primer día, respuestas rápidas a dudas comunes y nuestra política de privacidad.</p>
+      <p>Soporte: <a href="mailto:soporte.yallah@gmail.com">soporte.yallah@gmail.com</a></p>
+    </section>
+
+    <section id="como-usar" class="card">
+      <h2>Cómo usar Yallah</h2>
+      <ol class="steps">
+        <li><strong>Crea tu primera colección GPA</strong><br>
+            Graba una historia/canción/video de tu sesión con tu acompañante (nurturer) y guarda todo en una <em>colección</em> con título, notas e imágenes. Podrás reproducirla como playlist y usar saltos <span class="kbd">±5 s</span> para enfocarte en palabras clave.</li>
+        <li><strong>Añade nuevas palabras</strong><br>
+            En <em>Añadir palabra</em>, registra traducción (ES/EN⇄idioma meta), <em>transliteración</em>, ejemplos y comentarios. Agrega un <em>audio corto</em> de pronunciación. Las secciones de <em>conjugaciones</em> (presente/pasado) pueden desplegarse solo si las necesitas.</li>
+        <li><strong>Estudia con flashcards (SRS)</strong><br>
+            Elige modo (L1→L2, L2→L1 o ambos), baraja y define el tamaño de la sesión (5, 10, 15, 20, 50, 100 o ilimitado). Si tu palabra tiene audio, reprodúcelo en la tarjeta antes de revelar la respuesta.</li>
+        <li><strong>Crea un WordLog al final</strong><br>
+            Graba un audio corto con las <em>palabras nuevas</em> y 1–2 ejemplos dichos por ti. Añádelo a la colección para escucharlo en bucle durante el día.</li>
+        <li><strong>Organiza por carpetas/temas y favoritos</strong><br>
+            Agrupa tu vocabulario por temas (viajes, mercado, salud…). Envía cualquier carpeta a flashcards con un toque.</li>
+        <li><strong>Consulta tus estadísticas</strong><br>
+            Ve progreso diario, colas de repetición espaciada (hoy/mañana/próximos días), dificultad (no estudiadas, difíciles, algo difíciles, memorizadas) y revisión temporal (hoy, esta semana, 2 semanas, más atrás).</li>
+        <li><strong>Modo oscuro</strong><br>
+            Interfaz cómoda para sesiones largas: tipografía clara y contraste equilibrado.</li>
+      </ol>
+      <p class="muted small">Sugerencia: empieza por una historia corta (2–3 minutos). Crea el WordLog con 10–15 palabras máximas para repasarlas mucho ese día.</p>
+    </section>
+
+    <section id="guias" class="card grid grid-2">
+      <div>
         <h2>Guías rápidas</h2>
         <ul>
           <li>Crear vocabulario y añadir audio</li>
-          <li>Estudiar con flashcards</li>
-          <li>Grabar sesiones GPA</li>
-          <li>Organizar por carpetas/temas</li>
+          <li>Flashcards con repetición espaciada (SRS)</li>
+          <li>Grabar sesiones GPA y WordLog</li>
+          <li>Carpetas/temas y favoritos</li>
+          <li>Listas de reproducción: ±5 s y bucle</li>
+          <li>Estadísticas: hoy, mañana y próximos días</li>
         </ul>
       </div>
-      <div class="card">
-        <h2>FAQ</h2>
+      <div>
+        <h2>Atajos útiles</h2>
         <ul>
-          <li><strong>No veo el audio en la tarjeta</strong> → comprueba que esa palabra en especifico tenga un audio guardado. Ve a la vista de "Vocabulario" y busca esa palabra en especifico en la barra de busqueda, una vez que la encontraste, da click en esa palabra y se abriel "Detalles de Palabra" ahi deberias ver un icono azul con una bocina, si no esta necesitas grabar un audio primero para que aparezca.</li>
-          <li><strong>¿Cómo grabar un audio para una palabra?</strong> Entra en la vista de los detalles de la palabra y en la parte superior derecha veras un icono con tres puntos, click y despues click en "Grabar palabra". Sigue las recomendaciones que veras en pantalla y listo! tendras un audio grabado para esa palabra.</li>
-          <li><strong>No veo mis colecciones</strong> → asegúrate de guardar la sesión dentro de una colección.</li>
-          <li><strong>Recuperar datos</strong> → activa copias de seguridad del dispositivo (iCloud/iTunes).</li>
+          <li><span class="kbd">±5 s</span> en el reproductor para repetir un fragmento difícil</li>
+          <li>En flashcards: establece <em>tamaño de sesión</em> corto y repite a diario</li>
+          <li>Duplica una palabra para variantes; usa comentarios para matices</li>
+          <li>Marca <em>favoritos</em> para repasar lo prioritario</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>Política de privacidad</h2>
-      <p>Yallah! no requiere cuenta. Los datos (palabras, audios y colecciones) se guardan principalmente en tu dispositivo.
-         Si habilitas sincronización del sistema (p. ej., iCloud), su proveedor gestiona la transmisión según su propia política.</p>
-      <p><a href="privacy.html">Leer la Política de privacidad completa</a></p>
-    </div>
+    <section id="faq" class="card">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary><strong>No escucho el audio en la tarjeta</strong></summary>
+        <p>Asegúrate de que la palabra tenga un audio adjunto. En “Detalle de palabra”, pulsa reproducir para verificar. Si no suena, revisa permisos de micrófono/sonido del sistema.</p>
+      </details>
+      <details>
+        <summary><strong>¿Cómo cambio ES↔idioma meta en flashcards?</strong></summary>
+        <p>Ve a Ajustes de Flashcards y cambia el <em>modo de estudio</em>: L1→L2, L2→L1 o ambos. También puedes activar barajado aleatorio.</p>
+      </details>
+      <details>
+        <summary><strong>No veo mis colecciones</strong></summary>
+        <p>Comprueba que la sesión se guardó <em>dentro</em> de una colección. Desde la lista, verifica que tenga título y pistas visibles.</p>
+      </details>
+      <details>
+        <summary><strong>¿Puedo estudiar sin conexión?</strong></summary>
+        <p>Sí. Yallah! guarda datos principalmente en tu dispositivo. Las funciones de reproducción y flashcards funcionan offline con tu contenido local.</p>
+      </details>
+      <details>
+        <summary><strong>¿Qué pasa si cambio de teléfono?</strong></summary>
+        <p>Usa las copias de seguridad del dispositivo (iCloud/iTunes) para transferir tus datos. Si habilitas sincronización del sistema, tu proveedor gestiona la transmisión.</p>
+      </details>
+      <details>
+        <summary><strong>¿Cómo evito duplicados al añadir palabra?</strong></summary>
+        <p>El editor detecta posibles duplicados y te ofrece opciones antes de guardar. Revisa la sugerencia y confirma.</p>
+      </details>
+      <details>
+        <summary><strong>¿Necesito cuenta o internet para usar la app?</strong></summary>
+        <p>No. La app no requiere crear cuentas. Internet solo es necesario para descargas/actualizaciones de la App Store o si eliges sincronizar con servicios del sistema.</p>
+      </details>
+      <details>
+        <summary><strong>¿Dónde contacto soporte?</strong></summary>
+        <p>Escríbenos a <a href="mailto:soporte.yallah@gmail.com">soporte.yallah@gmail.com</a>. Respuesta habitual: 2–3 días hábiles.</p>
+      </details>
+    </section>
 
-    <div class="card">
-      <h2>English — Support</h2>
-      <p>Need help? Email <a href="mailto:soporte.yallah@gmail.com">soporte.yallah@gmail.com</a></p>
-      <ul>
-        <li>Build vocabulary & add audio</li>
-        <li>Study with SRS flashcards</li>
-        <li>Record GPA sessions & WordLog</li>
-        <li>Organize by folders/topics</li>
-      </ul>
-      <p>Privacy: data is stored primarily on your device. If you enable system sync (e.g., iCloud), your provider handles transmission under its policy.
-         <a href="privacy.html">Read full Privacy Policy</a></p>
-    </div>
+    <section id="contacto" class="card">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:soporte.yallah@gmail.com">soporte.yallah@gmail.com</a></p>
+      <p class="muted small">Para mejorar la respuesta, incluye: versión de iOS, modelo de dispositivo y pasos para reproducir el problema.</p>
+    </section>
 
     <footer>
-      <span class="pill">Yallah!</span>
-      <span class="pill">Soporte</span>
-      <span class="pill">GPA</span>
-      <div class="muted">© 2025 Yallah! • Este sitio es informativo para soporte. No recopilamos datos personales desde esta página.</div>
+      <span class="tag">Yallah!</span>
+      <span class="tag">GPA</span>
+      <span class="tag">SRS</span>
+      <div class="muted">© 2025 Abdiel Morales Arana — Sitio de soporte. No recopilamos datos personales desde estas páginas. | <a href="privacy.html">Política de privacidad</a></div>
     </footer>
   </div>
 </body>

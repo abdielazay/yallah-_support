@@ -1,0 +1,53 @@
+
+/* Yallah! Support Site — minimal, clean, responsive */
+:root{
+  --bg:#0f1115; --card:#151924; --ink:#e9eef6; --muted:#9aa4b2; --accent:#8fb3ff; --line:#22304a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+  background:linear-gradient(135deg,#0b0e13,#151924);
+  color:var(--ink);
+  line-height:1.6;
+}
+.container{max-width:980px;margin:0 auto;padding:28px 18px 64px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.logo{width:44px;height:44px;border-radius:12px;background:#1e2433;display:grid;place-items:center;
+      font-weight:700;color:var(--accent);box-shadow:0 1px 0 rgba(255,255,255,0.04) inset}
+h1{font-size:1.9rem;margin:0}
+nav{margin:10px 0 20px 0;display:flex;flex-wrap:wrap;gap:10px}
+nav a{padding:6px 10px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);}
+.card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:20px;
+  padding:18px 20px;
+  margin:16px 0;
+}
+.card h2{margin:0 0 8px 0;font-size:1.2rem}
+ul{margin:8px 0 0 18px}
+a{color:var(--accent)}
+.muted{color:var(--muted)}
+.grid{display:grid;gap:14px}
+@media(min-width:860px){.grid-2{grid-template-columns:1fr 1fr}}
+.tag{display:inline-block;background:#1b2230;border:1px solid #2a3447;border-radius:999px;padding:4px 10px;margin-right:6px}
+footer{margin-top:28px;color:var(--muted);font-size:.95rem}
+.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#1b2230;border:1px solid #2a3447;border-radius:6px;padding:2px 6px}
+hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.small{font-size:.95rem}
+ol.steps{counter-reset: step;list-style: none;margin-left:0;padding-left:0}
+ol.steps li{position:relative;padding-left:38px;margin:12px 0}
+ol.steps li:before{
+  counter-increment: step; content: counter(step);
+  position:absolute;left:0;top:0;
+  width:28px;height:28px;display:grid;place-items:center;
+  border-radius:999px;background:#1b2230;border:1px solid #2a3447;color:var(--ink);
+}
+.code{background:#1b2230;border:1px solid #2a3447;border-radius:10px;padding:10px 12px;font-family:ui-monospace,monospace;white-space:pre-wrap}
+table{width:100%;border-collapse:collapse}
+td,th{border:1px solid #2a3447;padding:8px 10px}
+thead th{background:#121826}
+.badge{font-size:.8rem;padding:2px 8px;border-radius:999px;border:1px solid #2a3447;background:#1b2230;color:#9ec1ff}
+.warn{background:#2a1b1b;border-color:#503232}
+.success{background:#1b2a1b;border-color:#325032}
