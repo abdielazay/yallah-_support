@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yallah! — Soporte</title>
+  <style>
+    :root {
+      --bg:#0f1115; --fg:#e9eef6; --muted:#9aa4b2; --card:#151924; --accent:#8fb3ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      background: linear-gradient(135deg,#0b0e13,#151924); color: var(--fg);
+    }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 32px 18px 60px; }
+    header { display:flex; align-items:center; gap:14px; }
+    .logo { width:44px; height:44px; border-radius:12px; background:#1e2433; display:grid; place-items:center;
+             font-weight:700; color:var(--accent); }
+    h1 { font-size: 1.75rem; margin: 0; }
+    .card { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);
+             border-radius:20px; padding:18px 20px; margin:18px 0; }
+    h2 { font-size:1.15rem; margin:0 0 8px 0; }
+    ul { margin:8px 0 0 18px; }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    footer { margin-top:28px; color:var(--muted); font-size:0.9rem; }
+    .grid { display:grid; gap:14px; }
+    @media(min-width:720px){ .grid{ grid-template-columns: 1fr 1fr; } }
+    .lang { font-size:0.95rem; margin-top:6px; }
+    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#1b2230; border:1px solid #2a3447; margin-right:6px; }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#1b2230; border:1px solid #2a3447;
+            border-radius:6px; padding:2px 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Y</div>
+      <div>
+        <h1>Yallah! — Soporte</h1>
+        <div class="lang muted">ES / EN • Última actualización: October 18, 2025</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2>¿Necesitas ayuda?</h2>
+      <p>Escríbenos a <a href="mailto:soporte.yallah@gmail.com">soporte.yallah@gmail.com</a></p>
+      <p class="muted">Tiempo de respuesta habitual: 2–3 días hábiles.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Guías rápidas</h2>
+        <ul>
+          <li>Crear vocabulario y añadir audio</li>
+          <li>Estudiar con flashcards (SRS)</li>
+          <li>Grabar sesiones GPA y WordLog</li>
+          <li>Organizar por carpetas/temas</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>FAQ</h2>
+        <ul>
+          <li><strong>No escucho el audio en la tarjeta</strong> → comprueba que la palabra tenga audio guardado.</li>
+          <li><strong>Cambiar ES↔L2 en flashcards</strong> → Ajustes de Flashcards → Modo de estudio.</li>
+          <li><strong>No veo mis colecciones</strong> → asegúrate de guardar la sesión dentro de una colección.</li>
+          <li><strong>Recuperar datos</strong> → activa copias de seguridad del dispositivo (iCloud/iTunes).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Política de privacidad</h2>
+      <p>Yallah! no requiere cuenta. Los datos (palabras, audios y colecciones) se guardan principalmente en tu dispositivo.
+         Si habilitas sincronización del sistema (p. ej., iCloud), su proveedor gestiona la transmisión según su propia política.</p>
+      <p><a href="privacy.html">Leer la Política de privacidad completa</a></p>
+    </div>
+
+    <div class="card">
+      <h2>English — Support</h2>
+      <p>Need help? Email <a href="mailto:soporte.yallah@gmail.com">soporte.yallah@gmail.com</a></p>
+      <ul>
+        <li>Build vocabulary & add audio</li>
+        <li>Study with SRS flashcards</li>
+        <li>Record GPA sessions & WordLog</li>
+        <li>Organize by folders/topics</li>
+      </ul>
+      <p>Privacy: data is stored primarily on your device. If you enable system sync (e.g., iCloud), your provider handles transmission under its policy.
+         <a href="privacy.html">Read full Privacy Policy</a></p>
+    </div>
+
+    <footer>
+      <span class="pill">Yallah!</span>
+      <span class="pill">Soporte</span>
+      <span class="pill">GPA</span>
+      <div class="muted">© 2025 Abdiel Morales Arana • Este sitio es informativo para soporte. No recopilamos datos personales desde esta página.</div>
+    </footer>
+  </div>
+</body>
+</html>
